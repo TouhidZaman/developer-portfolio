@@ -23,13 +23,34 @@ p {
 }
 
 section {
-    height: 500px;
+    min-height: 500px;
     padding-bottom: 50px;
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.half-width {
+    width: 45%;
+    padding-left: 5%;
+}
+.half-width img {
+    width: 90%;
+}
+
+@media(max-width: 570px) {
+    .flex {
+        flex-direction: column;
+    }
+    .half-width {
+        width: 100%;
+        padding: 10px 8%;
+    }
+    h1 {
+        font-size: 30px;
+    }
 }
 
 /* TOP BANNER SECTION  */
@@ -39,14 +60,11 @@ section {
     background-repeat: no-repeat;
     padding-top: 20px;
 }
-.half-width {
-    width: 45%;
-    padding-left: 5%;
+@media(max-width: 570px) {
+    .top-banner p {
+       width: 85%;
+    }
 }
-.half-width img {
-    width: 90%;
-}
-
 /* END OF TOP BANNER SECTION  */
 
 /* DREAM BIG SECTION  */
@@ -61,6 +79,14 @@ section {
     width: 85%;
 }
 
+@media(max-width: 570px) {
+    .dream-big {
+        background-size: 15%;
+    }
+    .dream-big img {
+        width: 80%;
+    }
+}
 /* END OF DREAM BIG SECTION  */
 
 /* EXPERIENCES SECTION  */
@@ -72,7 +98,7 @@ section {
     padding-left: 5%;
 }
 .experiences {
-    padding-top: 15px;
+    padding-top: 20px;
 }
 .single-experience {
     box-shadow: 10px 10px 40px gray;
@@ -98,6 +124,32 @@ section {
 
 }
 
+@media(max-width: 570px) {
+    
+    .experiences-section {
+        background-size: 15%;
+        padding-left: 0;
+    }
+    .experiences-section h1 {
+        padding-left: 8%;
+    }
+    .experiences {
+        padding-top: 0;
+    }
+    .single-experience {
+        width: 80%;
+        box-sizing: border-box;
+        margin: 5% auto;
+        padding: 0px 15px 30px;
+    }
+    .single-experience h1 {
+        font-size: 25px;
+    }
+    section {
+        padding-bottom: 30px;
+    }
+}
+
 /* END OF EXPERIENCES SECTION  */
 
 /* FOOTER  */
@@ -105,4 +157,11 @@ section {
 footer {
     text-align: center;
     font-size: 12px;
+}
+@media(max-width: 570px) {
+    footer {
+       height: 30px;
+       background-color: #cecece;
+       padding: 20px 0;
+    }
 }
