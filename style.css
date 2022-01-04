@@ -25,6 +25,8 @@ p {
 section {
     display: flex;
     flex-wrap: wrap;
+    height: 500px;
+    padding-bottom: 50px;
 }
 
 /* TOP BANNER SECTION  */
@@ -39,8 +41,21 @@ section {
     padding-left: 5%;
 }
 .half-width img {
-    width: 100%;
+    width: 90%;
 }
-.top-banner .left {
-    padding-top: 15px;
+
+/* END OF TOP BANNER SECTION  */
+
+/* DREAM BIG SECTION  */
+
+.dream-big {
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+.dream-big p {
+    width: 85%;
+}
+
+/* END OF DREAM BIG SECTION  */
