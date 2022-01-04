@@ -23,10 +23,13 @@ p {
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
     height: 500px;
     padding-bottom: 50px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* TOP BANNER SECTION  */
@@ -59,3 +62,38 @@ section {
 }
 
 /* END OF DREAM BIG SECTION  */
+
+/* EXPERIENCES SECTION  */
+
+.experiences-section {
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 5%;
+}
+.experiences {
+    padding-top: 15px;
+}
+.single-experience {
+    box-shadow: 10px 10px 40px gray;
+    height: 70%;
+    width: 37%;
+    border-radius: 5px;
+    padding: 0px 20px 40px;
+    margin-left: 7%;
+}
+.single-experience p {
+    text-align: justify;
+    width: 95%;
+}
+#full-stack-dev {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon,tomato);
+    border-image-slice: 1;
+}
+#graphic-design {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue,cyan);
+    border-image-slice: 1;
+
+}
